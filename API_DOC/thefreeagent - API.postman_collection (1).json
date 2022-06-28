@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "24214663-d8c9-4251-9e43-d5dfce113504",
+		"name": "thefreeagent - API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://thefreeagent.fr/api/fa-login.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"apiauth\" : \"6e=nM$/R{sCaPWE\",\n\t\"rcp_user_login\" : \"username@test.com\",\n\t\"rcp_user_pass\" : \"0000\"\n}"
+				},
+				"url": {
+					"raw": "https://thefreeagent.fr/api/fa-login.php",
+					"protocol": "https",
+					"host": [
+						"thefreeagent",
+						"fr"
+					],
+					"path": [
+						"api",
+						"fa-login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://thefreeagent.fr/api/fa-posts.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "pageno",
+						"value": "1"
+					},
+					{
+						"key": "totalrecords",
+						"value": "20"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"apiauth\" : \"6e=nM$/R{sCaPWE\"\n}"
+				},
+				"url": {
+					"raw": "https://thefreeagent.fr/api/fa-posts.php",
+					"protocol": "https",
+					"host": [
+						"thefreeagent",
+						"fr"
+					],
+					"path": [
+						"api",
+						"fa-posts.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://thefreeagent.fr/api/fa-post-details.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "pageno",
+						"value": "1"
+					},
+					{
+						"key": "totalrecords",
+						"value": "20"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"apiauth\" : \"6e=nM$/R{sCaPWE\",\n\t\"postid\" : 304101\n}"
+				},
+				"url": {
+					"raw": "https://thefreeagent.fr/api/fa-post-details.php",
+					"protocol": "https",
+					"host": [
+						"thefreeagent",
+						"fr"
+					],
+					"path": [
+						"api",
+						"fa-post-details.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://thefreeagent.fr/api/fa-category-details.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "pageno",
+						"value": "1"
+					},
+					{
+						"key": "totalrecords",
+						"value": "20"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"apiauth\" : \"6e=nM$/R{sCaPWE\",\n  \"categoryid\" : 110\n}"
+				},
+				"url": {
+					"raw": "https://thefreeagent.fr/api/fa-category-details.php",
+					"protocol": "https",
+					"host": [
+						"thefreeagent",
+						"fr"
+					],
+					"path": [
+						"api",
+						"fa-category-details.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://thefreeagent.fr/api/fa-categories.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "pageno",
+						"value": "1"
+					},
+					{
+						"key": "totalrecords",
+						"value": "20"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"apiauth\" : \"6e=nM$/R{sCaPWE\",\n\t\"pageno\" : 2,\n\t\"totalrecords\" : 20\n}"
+				},
+				"url": {
+					"raw": "https://thefreeagent.fr/api/fa-categories.php",
+					"protocol": "https",
+					"host": [
+						"thefreeagent",
+						"fr"
+					],
+					"path": [
+						"api",
+						"fa-categories.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
